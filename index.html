@@ -263,7 +263,7 @@ a{color:inherit}
   .fim-produto{grid-template-columns:1fr 1fr;align-items:center}
   .fim-produto > img{height:auto;aspect-ratio:682/454;border-radius:0 16px 16px 0}
   .fim-produto > div{padding:1.4rem 1.6rem}
-  .fim-garantias{grid-template-columns:repeat(3,auto);justify-content:space-around}
+  .fim-garantias{grid-template-columns:repeat(2,auto);justify-content:space-around}
 }
 
 /* ---------- Dúvidas ---------- */
@@ -381,6 +381,16 @@ a.btn[data-checkout]{animation:pulsar 1.6s ease-in-out infinite}
 @keyframes pulsar-pequeno{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
 a.btn[data-checkout]:hover{animation-play-state:paused}
 @media (prefers-reduced-motion:reduce){a.btn[data-checkout],.barra a.btn[data-checkout]{animation:none}}
+/* ---------- Título em texto no celular ---------- */
+@media (max-width:859px){
+  .topo h1{position:static;width:auto;height:auto;overflow:visible;clip-path:none;white-space:normal;color:var(--bordo);font-size:clamp(1.85rem,6.4vw + .4rem,2.4rem);margin-bottom:.8rem}
+}
+/* ---------- Garantia ---------- */
+.garantia{display:flex;align-items:center;gap:.6rem;margin-top:.9rem;font-size:.9375rem;line-height:1.35;color:var(--tinta)}
+.garantia svg{flex:none;width:28px;height:28px;fill:none;stroke:var(--botao);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.garantia b{color:var(--bordo)}
+.cartao-preco .garantia{justify-content:center;text-align:left}
+@media (min-width:860px){.topo-compra .garantia{justify-content:center}}
 </style>
 <header class="topo">
  <!-- BANNER DO TOPO: a imagem aparece inteira em qualquer tela. No celular, a frase e os quatro pontos vêm repetidos abaixo em letra maior. -->
@@ -408,6 +418,7 @@ a.btn[data-checkout]:hover{animation-play-state:paused}
     <a class="btn" data-checkout href="https://ggcheckout.app/checkout/v2/kKSPXrBqDOFRzvAgoG5c">Quero meu guia</a>
    </div>
    <p class="entrega">Você recebe por e-mail o link de acesso ao aplicativo depois que o pagamento é confirmado.</p>
+   <p class="garantia"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg><span><b>Garantia de 7 dias:</b> se não gostar, devolvemos seu dinheiro.</span></p>
   </div>
  </div>
 </header>
@@ -711,6 +722,7 @@ a.btn[data-checkout]:hover{animation-play-state:paused}
     <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="6" width="17" height="12" rx="2"/><path d="M4 7.5l8 6 8-6"/></svg>Acesso enviado por e-mail</li>
     <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="12" height="9" rx="1.5"/><rect x="14" y="9" width="6.5" height="10.5" rx="1.5"/><path d="M6 18.5h5"/></svg>Leia no celular, tablet ou computador</li>
     <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5.5" y="10.5" width="13" height="9" rx="2"/><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5"/></svg>Pagamento único pelo checkout</li>
+    <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>Garantia de 7 dias</li>
    </ul>
 
    <a class="btn fim-cta" data-checkout href="https://ggcheckout.app/checkout/v2/kKSPXrBqDOFRzvAgoG5c">Quero meu guia da gestação agora <span class="quiz-seta" aria-hidden="true">→</span></a>
@@ -744,6 +756,7 @@ a.btn[data-checkout]:hover{animation-play-state:paused}
    </p>
    <a class="btn" data-checkout href="https://ggcheckout.app/checkout/v2/kKSPXrBqDOFRzvAgoG5c">Quero meu guia</a>
    <p class="pix">Pagamento via PIX pelo checkout.</p>
+   <p class="garantia"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg><span><b>Garantia de 7 dias:</b> se não gostar, devolvemos seu dinheiro.</span></p>
   </div>
  </div>
 </section>
