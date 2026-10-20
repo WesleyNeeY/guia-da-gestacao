@@ -7,7 +7,7 @@
    ===================================================================== */
 var CONFIG = {
   // Preço mostrado na página. Atenção: o valor cobrado é o que está no checkout.
-  preco: "9,99",
+  preco: "19,90",
 
   // Link do checkout. Todos os botões de compra usam este endereço.
   checkout: "https://ggcheckout.app/checkout/v2/kKSPXrBqDOFRzvAgoG5c",
@@ -412,7 +412,7 @@ a.btn[data-checkout]:hover{animation-play-state:paused}
    <div class="compra-linha">
     <p class="preco">
      <span class="preco-rotulo">Preço de lançamento</span>
-     <span class="preco-valor">R$ <span data-preco>9,99</span></span>
+     <span class="preco-valor">R$ <span data-preco>19,90</span></span>
      <span class="preco-nota">pagamento único</span>
     </p>
     <a class="btn" data-checkout href="https://ggcheckout.app/checkout/v2/kKSPXrBqDOFRzvAgoG5c">Quero meu guia</a>
@@ -726,7 +726,7 @@ a.btn[data-checkout]:hover{animation-play-state:paused}
    </ul>
 
    <a class="btn fim-cta" data-checkout href="https://ggcheckout.app/checkout/v2/kKSPXrBqDOFRzvAgoG5c">Quero meu guia da gestação agora <span class="quiz-seta" aria-hidden="true">→</span></a>
-   <p class="fim-preco">R$ <span data-preco>9,99</span> · pagamento único</p>
+   <p class="fim-preco">R$ <span data-preco>19,90</span> · pagamento único</p>
 
    <p class="fim-aviso"><b>Informação de qualidade para uma maternidade mais tranquila, consciente e especial.</b> Este material tem caráter educativo e não substitui o acompanhamento de profissionais de saúde.</p>
    <button type="button" class="quiz-refazer">Refazer o quiz</button>
@@ -751,7 +751,7 @@ a.btn[data-checkout]:hover{animation-play-state:paused}
   <div class="cartao-preco claro">
    <p class="preco">
     <span class="preco-rotulo">Preço de lançamento</span>
-    <span class="preco-valor">R$ <span data-preco>9,99</span></span>
+    <span class="preco-valor">R$ <span data-preco>19,90</span></span>
     <span class="preco-nota">pagamento único</span>
    </p>
    <a class="btn" data-checkout href="https://ggcheckout.app/checkout/v2/kKSPXrBqDOFRzvAgoG5c">Quero meu guia</a>
@@ -783,7 +783,7 @@ a.btn[data-checkout]:hover{animation-play-state:paused}
 
 <div class="barra">
  <p class="preco">
-  <span class="preco-valor">R$ <span data-preco>9,99</span></span>
+  <span class="preco-valor">R$ <span data-preco>19,90</span></span>
   <span class="preco-nota">pagamento único</span>
  </p>
  <a class="btn" data-checkout href="https://ggcheckout.app/checkout/v2/kKSPXrBqDOFRzvAgoG5c">Quero meu guia</a>
@@ -805,7 +805,7 @@ a.btn[data-checkout]:hover{animation-play-state:paused}
     fbq("init",id);
     fbq("track","PageView");
     document.querySelectorAll("a[data-checkout]").forEach(function(a){
-      a.addEventListener("click",function(){ try{ fbq("track","InitiateCheckout",{value:9.99,currency:"BRL"}); }catch(e){} });
+      a.addEventListener("click",function(){ try{ fbq("track","InitiateCheckout",{value:19.90,currency:"BRL"}); }catch(e){} });
     });
   }
 })();
